@@ -26,9 +26,13 @@ return {
   {
     "nvim-tree/nvim-tree.lua",
     opts = {
+      view = {
+        width = 50
+      },
       filters = {
         dotfiles = false,
         git_ignored = false,
+        custom = { "^node_modules$", "^.git$", "^.cache$", "%.temp$", "^src/appengine" },
       },
     },
   },
