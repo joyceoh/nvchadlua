@@ -1,4 +1,5 @@
 vim.o.relativenumber = true
+vim.o.shiftwidth = 4
 
 return {
   {
@@ -32,7 +33,8 @@ return {
       filters = {
         dotfiles = false,
         git_ignored = false,
-        custom = { "^node_modules$", "^.git$", "^.cache$", "%.temp$", "^src/appengine" },
+        custom = { "^node_modules$", "^.git$", "^.cache$", "%.temp$",  },
+        -- add back "^src/appengine" later
       },
     },
   },
